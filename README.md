@@ -32,6 +32,6 @@ npm run build
 
 ```text
 https://<你的 GitHub 用户名>.github.io/<仓库名>/
-```
+```text
 
 > 当前执行环境没有配置 GitHub 远程仓库或 Pages 权限，因此无法在本机直接生成最终公网域名；推送到 GitHub 后工作流会自动发布。
