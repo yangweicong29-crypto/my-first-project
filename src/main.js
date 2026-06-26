@@ -1,14 +1,14 @@
 const services = [
-  { id: 'cut', name: '精致剪发', duration: 45, price: 68, badge: '人气' },
-  { id: 'wash', name: '洗剪吹造型', duration: 60, price: 98, badge: '推荐' },
-  { id: 'color', name: '潮流染发', duration: 120, price: 288, badge: '新品' },
-  { id: 'perm', name: '纹理烫发', duration: 150, price: 368, badge: '高级' },
+  { id: 'cut', name: '精致剪发', duration: 25, price: 30, badge: '人气' },
+  { id: 'wash', name: '洗剪吹造型', duration: 33, price: 38, badge: '推荐' },
+  { id: 'color', name: '潮流染发', duration: 120, price: 188, badge: '新品' },
+  { id: 'perm', name: '纹理烫发', duration: 138, price: 188, badge: '高级' },
 ];
 
 const stylists = [
-  { id: 'lin', name: '林老师', specialty: '短发设计 / 男士造型', rating: 4.9 },
-  { id: 'chen', name: '陈老师', specialty: '染烫修护 / 发色建议', rating: 4.8 },
-  { id: 'zhou', name: '周老师', specialty: '女发层次 / 日常打理', rating: 4.9 },
+  { id: 'lin', name: '杨老师', specialty: '短发设计 / 男士造型', rating: 4.9 },
+  { id: 'chen', name: '杨老师', specialty: '染烫修护 / 发色建议', rating: 4.8 },
+  { id: 'zhou', name: '杨老师', specialty: '女发层次 / 日常打理', rating: 4.9 },
 ];
 
 const timeSlots = ['10:00', '11:00', '13:30', '15:00', '16:30', '18:00', '19:30'];
