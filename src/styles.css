@@ -1,0 +1,67 @@
+:root {
+  color: #201a17;
+  background: #f8efe7;
+  font-family: Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, select, textarea { font: inherit; }
+
+.app-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 48px;
+}
+
+.hero-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  padding: 36px;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #2b1d17, #8d4d2f);
+  color: white;
+  box-shadow: 0 24px 70px rgba(72, 39, 23, 0.25);
+}
+
+.eyebrow { margin: 0 0 8px; color: #ffd8a8; text-transform: uppercase; letter-spacing: 0.18em; }
+h1 { margin: 0; font-size: clamp(2rem, 6vw, 4.5rem); line-height: 1.05; }
+.hero-copy { max-width: 560px; color: #ffe9dc; font-size: 1.1rem; }
+.hero-stat { min-width: 132px; padding: 22px; border-radius: 24px; text-align: center; background: rgba(255,255,255,.13); }
+.hero-stat strong { display: block; font-size: 3rem; }
+.hero-stat span { color: #ffe1bf; }
+
+.layout-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(320px, .8fr); gap: 24px; margin-top: 24px; }
+.booking-card, .summary-card { border: 1px solid rgba(112, 73, 45, .13); border-radius: 28px; background: rgba(255, 252, 248, .9); padding: 28px; box-shadow: 0 18px 55px rgba(95, 54, 29, .12); }
+h2 { margin: 0 0 20px; font-size: 1.5rem; }
+label { display: grid; gap: 10px; margin-bottom: 18px; color: #5c4639; font-weight: 700; }
+input, select, textarea { width: 100%; border: 1px solid #ead7c4; border-radius: 16px; padding: 14px 16px; background: white; color: #2b1d17; outline: none; }
+input:focus, select:focus, textarea:focus { border-color: #b56638; box-shadow: 0 0 0 4px rgba(181, 102, 56, .12); }
+textarea { min-height: 92px; resize: vertical; }
+
+.service-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.option { text-align: left; border: 1px solid #eddac8; border-radius: 20px; padding: 16px; background: #fffaf5; cursor: pointer; transition: .2s ease; }
+.option:hover, .option.active { border-color: #b56638; transform: translateY(-2px); box-shadow: 0 12px 28px rgba(139, 75, 38, .16); }
+.option strong, .option small { display: block; margin-top: 8px; }
+.option small { color: #8a6a57; }
+.badge { display: inline-flex; padding: 4px 8px; border-radius: 999px; background: #f7dfc9; color: #9a552e; font-size: .78rem; }
+.inline-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.submit-btn { width: 100%; border: 0; border-radius: 18px; padding: 16px; color: white; background: linear-gradient(135deg, #b56638, #2b1d17); font-weight: 800; cursor: pointer; }
+
+.preview-box { display: grid; gap: 8px; padding: 22px; border-radius: 22px; background: #2b1d17; color: white; }
+.preview-box p { margin: 0; color: #ffd8a8; }
+.preview-box strong { font-size: 1.35rem; }
+.preview-box span { color: #ffe8dc; }
+h3 { margin: 28px 0 14px; }
+.empty { color: #8a6a57; }
+.appointment-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.appointment-list li { display: grid; gap: 5px; padding: 16px; border-radius: 18px; background: #fff6ec; }
+.appointment-list span, .appointment-list small { color: #795b4a; }
+
+@media (max-width: 820px) {
+  .hero-card, .layout-grid { grid-template-columns: 1fr; }
+  .hero-card { align-items: flex-start; flex-direction: column; }
+  .service-grid, .inline-fields { grid-template-columns: 1fr; }
+}
